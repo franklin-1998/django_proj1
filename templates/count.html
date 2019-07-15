@@ -1,0 +1,11 @@
+<h1>Your text consist of {{count}}  words</h1>
+<h2>Given input text</h2>
+{{line}}
+<a href="{% url 'home' %}">RunAgain</a>
+<h3>word and its count as follow</h3>
+{% for word, counts in worddict %}
+<br />
+{{word}}  {{counts}}
+<br />
+{% endfor %}
+
